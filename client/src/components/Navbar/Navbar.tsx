@@ -10,8 +10,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar__logo">
-        <Link to="/"></Link>
-        <img src="client\src\components\Navbar\images\coffee.jpg" alt="Coffee"></img>
+        <Link to="/"><img src="https://www.tastingtable.com/img/gallery/coffee-brands-ranked-from-worst-to-best/l-intro-1645231221.jpg" alt="Coffee"></img></Link>
       </div>
       <div className="navbar__account">
         {loggedIn() === false ? (
