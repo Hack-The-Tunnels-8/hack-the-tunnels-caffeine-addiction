@@ -23,7 +23,7 @@ function Home() {
         <p>Hello World!!!!</p>
         <h2>Products:</h2>
         <div className="home-page__products">
-          {products.map((product) => (
+            {products.map((product) => (
             <Link to={`/products/${product.id}`} key={`${product.id}`}>
               <ProductPreviewCard
                 title={product.title}
@@ -33,9 +33,8 @@ function Home() {
                 key={`${product.id}`}
               />
             </Link>
-          ))}
+          ))}</div>
         </div>
-      </div>
     </Page>
   );
 }

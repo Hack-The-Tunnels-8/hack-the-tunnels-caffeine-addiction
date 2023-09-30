@@ -1,12 +1,22 @@
 .home-page {
   &__title {
+    padding: 25px;
     color: blue;
     font-family: "Comic Sans MS";
   }
 
+#home-page__products{
+  padding-left: 50px;
+}
+
   &__products {
+    
     display: flex;
-    flex-direction: column;
+    flex-flow: wrap;
+  
+    justify-content: center;
+    column-gap: 350px;
+    row-gap: 50px;
 
     a {
       text-decoration: none;
