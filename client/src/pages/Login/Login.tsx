@@ -4,11 +4,13 @@ import { Page } from "../../components";
 import { useAccountContext } from "../../context";
 import "./Login.style.scss";
 
+
+
 function Login() {
   const [message, setMessage] = useState(null);
   const { loggedIn, login } = useAccountContext();
   const navigate = useNavigate();
-
+  
   const attemptLogin = async () => {
     try {
       const message = await login("admin@email.com", "password");
