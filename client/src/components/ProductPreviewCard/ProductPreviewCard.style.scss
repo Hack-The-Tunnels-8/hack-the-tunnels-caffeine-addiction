@@ -1,11 +1,14 @@
 .product-preview-card {
+  background-color: #3d405b;
+
   &__title {
+
     font-style: bold;
-    color: green;
+    color: #e07a5f;
   }
 
   &__description {
-    color: blue;
+    color: #f4f1de;
   }
 
   &__image {
@@ -13,6 +16,7 @@
   }
 
   &__shipping {
-    color: red
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #81b29a;
   }
 }
