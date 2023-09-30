@@ -11,13 +11,18 @@ datasource db {
 }
 
 model Product {
-  id          Int        @id @default(autoincrement())
-  title       String
-  description String?
-  price       Float
-  imageUrl    String?
-  lineItems   LineItem[]
+  id           Int        @id @default(autoincrement())
+  title        String
+  description  String?
+  price        Float
+  imageUrl     String?
+  deliverydate DateTime     @default(now())
+  lineItems    LineItem[]
+  deleted      Boolean    @default(false)
 }
+
+//npx prisma migrate dev --name Product
+//npx prisma db push
 
 model Order {
   id         Int        @id @default(autoincrement())
