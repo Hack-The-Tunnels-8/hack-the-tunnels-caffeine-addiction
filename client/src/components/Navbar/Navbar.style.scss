@@ -4,9 +4,9 @@
   justify-content: space-between;
 }
 
-img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
+.navbar__logo {
+  border-radius: 15px;
   padding: 5px;
   width: 150px;
+  position: fixed;
 }

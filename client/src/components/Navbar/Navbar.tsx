@@ -9,14 +9,14 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      <div className="navbar__logo">
-        <Link to="/"><img src="https://www.tastingtable.com/img/gallery/coffee-brands-ranked-from-worst-to-best/l-intro-1645231221.jpg" alt="Coffee"></img></Link>
+      <div>
+        <Link to="/"><img className="navbar__logo" src="https://www.tastingtable.com/img/gallery/coffee-brands-ranked-from-worst-to-best/l-intro-1645231221.jpg" alt="Coffee"></img></Link>
       </div>
       <div className="navbar__account">
         {loggedIn() === false ? (
           <>
-            <button onClick={() => navigate("/sign-up")}>Sign Up</button>
-            <button onClick={() => navigate("/login")}>Login</button>
+            <button id="signup_button" onClick={() => navigate("/sign-up")}>Sign Up</button>
+            <button id="login_button" onClick={() => navigate("/login")}>Login</button>
           </>
         ) : (
           <button onClick={() => logout()}>Logout</button>
