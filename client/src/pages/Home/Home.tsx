@@ -30,6 +30,7 @@ function Home() {
                 description={product.description}
                 price={product.price}
                 imageUrl={product.imageUrl}
+                shipping = {product.shipping}
                 key={`${product.id}`}
               />
             </Link>

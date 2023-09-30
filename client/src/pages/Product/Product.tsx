@@ -33,6 +33,7 @@ function Product() {
               <h3>Title: {product.title}</h3>
               <p>ID: {id}</p>
               <p>Description: {product.description}</p>
+              <p>Delivery Date: {product.shipping}</p>
             </div>
             <Link to={`/checkout/${product.id}`}>
               <button>Buy Now</button>
